@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violet News - Современные новости</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">VIOLET<span>NEWS</span></div>
+                <div class="date">Сегодня, <span id="current-date"></span></div>
+                <div class="auth-buttons">
+                    <button class="login">Войти</button>
+                    <button class="subscribe">Подписаться</button>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Главная</a></li>
+                    <li><a href="#">Политика</a></li>
+                    <li><a href="#">Экономика</a></li>
+                    <li><a href="#">Общество</a></li>
+                    <li><a href="#">Технологии</a></li>
+                    <li><a href="#">Культура</a></li>
+                    <li><a href="#">Спорт</a></li>
+                    <li><a href="#">Наука</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="breaking-news">
+            <div class="main-news">
+                <div class="news-tag">Главная новость</div>
+                <h1>Крупное открытие в науке: ученые обнаружили новый вид энергии</h1>
+                <p class="excerpt">Международная группа исследователей сделала революционное открытие, которое может изменить наше представление о физике...</p>
+                <div class="meta">
+                    <span class="author">Анна Смирнова</span>
+                    <span class="time">2 часа назад</span>
+                </div>
+            </div>
+            <div class="secondary-news">
+                <div class="news-item">
+                    <div class="news-tag">Политика</div>
+                    <h3>Президент подписал новый пакет экономических реформ</h3>
+                    <div class="meta">
+                        <span class="time">1 час назад</span>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-tag">Технологии</div>
+                    <h3>Компания Apple анонсировала революционное обновление iOS</h3>
+                    <div class="meta">
+                        <span class="time">3 часа назад</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-grid">
+            <div class="section-header">
+                <h2>Последние новости</h2>
+                <a href="#" class="all-news">Все новости →</a>
+            </div>
+            <div class="grid">
+                <article class="news-card">
+                    <div class="category politics">Политика</div>
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Новость">
+                    <h3>Парламент принял новый закон о цифровых правах</h3>
+                    <p class="excerpt">Законопроект, разработанный министерством цифрового развития, получил поддержку большинства депутатов...</p>
+                    <div class="meta">
+                        <span class="author">Иван Петров</span>
+                        <span class="time">5 часов назад</span>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="category economy">Экономика</div>
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Новость">
+                    <h3>Курс доллара опустился ниже 75 рублей</h3>
+                    <p class="excerpt">На Московской бирже курс американской валюты снизился на 1,5 рубля по сравнению с предыдущими торгами...</p>
+                    <div class="meta">
+                        <span class="author">Елена Козлова</span>
+                        <span class="time">7 часов назад</span>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="category culture">Культура</div>
+                    <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Новость">
+                    <h3>В Москве открылась выставка современного искусства</h3>
+                    <p class="excerpt">В Третьяковской галерее представили работы молодых художников из 15 стран мира...</p>
+                    <div class="meta">
+                        <span class="author">Алексей Воронов</span>
+                        <span class="time">9 часов назад</span>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="category science">Наука</div>
+                    <img src="https://images.unsplash.com/photo-1564053489984-317bbd824340?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Новость">
+                    <h3>Ученые обнаружили потенциально обитаемую планету</h3>
+                    <p class="excerpt">Астрономы нашли экзопланету в зоне обитаемости звезды, похожей на Солнце...</p>
+                    <div class="meta">
+                        <span class="author">Ольга Семенова</span>
+                        <span class="time">11 часов назад</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <div class="popular-news">
+                <h3>Популярное</h3>
+                <ul>
+                    <li>
+                        <a href="#">Скандал в правительстве: министр подал в отставку</a>
+                        <span class="views">15K</span>
+                    </li>
+                    <li>
+                        <a href="#">Новый смартфон Xiaomi поразил своими характеристиками</a>
+                        <span class="views">12K</span>
+                    </li>
+                    <li>
+                        <a href="#">Как изменится пенсионная система в следующем году</a>
+                        <span class="views">9K</span>
+                    </li>
+                    <li>
+                        <a href="#">ТОП-10 фильмов, которые стоит посмотреть этой осенью</a>
+                        <span class="views">7K</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="subscribe-box">
+                <h3>Подписка на новости</h3>
+                <p>Получайте самые важные новости первыми</p>
+                <form>
+                    <input type="email" placeholder="Ваш email">
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">VIOLET<span>NEWS</span></div>
+            <div class="footer-links">
+                <div class="links-column">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Политика</a></li>
+                        <li><a href="#">Экономика</a></li>
+                        <li><a href="#">Общество</a></li>
+                    </ul>
+                </div>
+                <div class="links-column">
+                    <h4>Компания</h4>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Реклама</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="links-column">
+                    <h4>Правовая информация</h4>
+                    <ul>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Правила использования материалов</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2023 Violet News. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
